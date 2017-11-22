@@ -1,0 +1,18 @@
+{
+  "lb-prueba": {
+    "host": "localhost",
+    "port": 3306,
+    "url": "",
+    "database": "lbprueba",
+    "password": "root",
+    "name": "lb-prueba",
+    "user": "root",
+    "connector": "mysql"
+  },
+  "db": {
+    "name": "db",
+    "localStorage": "",
+    "file": "",
+    "connector": "memory"
+  }
+}

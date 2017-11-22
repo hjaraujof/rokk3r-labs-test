@@ -1,0 +1,27 @@
+'use strict';
+module.exports = function(app) {
+  var Brand = app.models.Brand;
+  var ClothingType = app.models.ClothingType;
+
+  Brand.create([
+    {id: 1, name: 'Gap'},
+    {id: 2, name: 'Banana Republic'},
+    {id: 3, name: 'Boss'},
+    {id: 4, name: 'Hugo Boss'},
+    {id: 5, name: 'Taylor'},
+    {id: 6, name: 'Rebecca Taylor'},
+  ], function(err, brands) {
+    if (err) throw err;
+    console.log('Created brands:', brands);
+    ClothingType.create([
+      {id: 1, name: 'Denim'},
+      {id: 2, name: 'Pants'},
+      {id: 3, name: 'Sweaters'},
+      {id: 4, name: 'Skirts'},
+      {id: 5, name: 'Dresses'},
+    ], function(err, clothingtypes) {
+      if (err) throw err;
+      console.log('Created clothing types:', clothingtypes);  
+    });
+  });
+};

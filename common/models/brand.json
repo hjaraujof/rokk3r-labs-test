@@ -1,0 +1,26 @@
+{
+  "name": "Brand",
+  "plural": "Brands",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "id": true,
+      "required": true,
+      "description": "Brand ID."
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "description": "Brand Full Name"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
