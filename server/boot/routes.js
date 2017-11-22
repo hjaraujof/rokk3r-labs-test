@@ -4,7 +4,7 @@ module.exports = function(app) {
   var request = require('request');
   // Install a "/ping" route that returns "pong"
   app.get('/', function(req, res) {
-    res.render('index', {data: 0});
+    res.render('index', {search: '', result: ''});
   });
   app.post('/', function(req, res) {
     var search = req.body.search;
